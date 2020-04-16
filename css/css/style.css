@@ -64,14 +64,19 @@ header .menu ul li:hover{
   background-color: rgba(48, 43, 39, 0.8);
 }
 header .menu ul li:first-child{
-border-left: none;
+  border-left: none;
 }
 header .menu ul li:last-child{
-border-right: none;
+  border-right: none;
 }
 /*fine header*/
 
 /*main*/
+main:after{
+  content: "";
+  display: table;
+  clear: both;
+}
 
 /*box sinistra*/
 main .box.theme{
@@ -106,11 +111,12 @@ main .icon .feed{
 main .box.centrale{
   background-color: white;
   float: left;
-  width: 50%;
+  width: 60%;
   border-radius: 5px;
   margin: 1%;
-  margin-left: 55px;
+  margin-left: auto;
   color:black;
+  font-family: sans-serif
 }
 main .box.centrale > * {
   padding:15px;
@@ -120,5 +126,25 @@ main .box.centrale p {
   font-size: 15px;
   font-family: sans-serif;
 }
-
+ /*box destra*/
+ .box.widgets{
+  width: 20%;
+  float: left;
+  margin: 1%;
+  margin-right: 0%;
+ }
+ main .box .widget{
+  background-color: white;
+  border-radius: 5px;
+  padding: 15px;
+  margin-top: 15%;
+ }
+main .box .widget:first-child{
+  margin-top: 1%;
+}
+main .box.widget,h2,p{
+  font-family: sans-serif;
+  color:#444;
+  line-height: 27px;
+}
 /*fine main*/
