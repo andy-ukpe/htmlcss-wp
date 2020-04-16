@@ -7,14 +7,16 @@
 /*fine regole generali*/
 
 /*impostazione pagina*/
-.page{
+body {
   background-image: url(../img/sfondo.png);
   padding: 28px 55px;
 }
 
 /*fine impostazione pagina*/
 
-/*header*/
+/*HEADER*/
+
+/*contenitore*/
 header .contenitore{
   height: 250px;
   width: 100%;
@@ -40,6 +42,10 @@ header .contenitore .text h1{
   font-weight: 600;
   border: 5px solid white;
 }
+header .contenitore .text p{
+  color: white;
+}
+/*menu*/
 header .menu{
   background-color: #504741;
   text-align: center;
@@ -61,9 +67,108 @@ header .menu ul li:hover{
   background-color: rgba(48, 43, 39, 0.8);
 }
 header .menu ul li:first-child{
-border-left: none;
+  border-left: none;
 }
 header .menu ul li:last-child{
-border-right: none;
+  border-right: none;
 }
 /*fine header*/
+
+/*MAIN*/
+main:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*box sinistra*/
+main .box.theme{
+  background-color: white;
+  float: left;
+  width: 16%;
+  border-radius: 5px;
+  margin: 1%;
+  margin-left: 0;
+  padding: 3px;
+}
+main .feed .news{
+display: inline-block;
+}
+main .box h3{
+  color: #444;
+  font-size: 25px;
+  font-family: sans-serif;
+}
+main .box.theme p{
+  color: green;
+  padding: 5px;
+  font-family: sans-serif;
+  font-weight: 600;
+}
+
+/*box centrale*/
+main .box.centrale{
+  background-color: white;
+  float: left;
+  width: 60%;
+  border-radius: 5px;
+  margin: 1%;
+  margin-left: auto;
+  color:black;
+  font-family: sans-serif
+}
+main .box.centrale > * {
+  padding:15px;
+}
+main .box.centrale p {
+  line-height: 27px;
+  font-size: 15px;
+  font-family: sans-serif;
+}
+ /*box destra*/
+ .box.widgets{
+  width: 20%;
+  float: left;
+  margin: 1%;
+  margin-right: 0%;
+ }
+ main .box .widget{
+  background-color: white;
+  border-radius: 5px;
+  padding: 15px;
+  margin-top: 15%;
+ }
+main .box .widget:first-child{
+  margin-top: 1%;
+}
+main .box.widget,h2,p{
+  font-family: sans-serif;
+  color:#444;
+  line-height: 27px;
+}
+/*fine main*/
+
+/*FOOTER*/
+footer{
+  background-color: white;
+  border-radius: 5px;
+  text-align:center;
+  color:#999;
+}
+/*icone*/
+footer .icons{
+  padding:48px;
+}
+footer .icons i{
+  font-size: 48px;
+  position: relative;
+}
+footer .icons .fb{
+  position:absolute;
+  left: 20%;
+}
+footer .icons .gh{
+  position:absolute;
+  right: 20%;
+}
+/*fine footer*/
